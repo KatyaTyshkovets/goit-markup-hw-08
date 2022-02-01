@@ -1,0 +1,39 @@
+.project {
+  margin-bottom: 50px;
+  padding-top: 94px;
+}
+.item__button {
+  color: $primary-color;
+
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+
+  padding: 6px 22px;
+  border-radius: 4px;
+  border: none transparent;
+
+  transition: box-shadow $duration $timing-fuction, background-color $duration $timing-fuction,
+    color$duration $timing-fuction;
+
+  &:hover,
+  &:focus {
+    box-shadow: $btn-shadow;
+    background-color: $accent-bcr;
+    color: $primary-white-color;
+    cursor: pointer;
+  }
+}
+.item {
+  margin-bottom: 50px;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+}
+.buttons:not(:last-child) {
+  margin-right: 8px;
+}

@@ -1,0 +1,74 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-bottom: -30px;
+  padding-top: 0;
+}
+.gallery__item {
+  width: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+.gallery__link {
+  display: block;
+  transition: box-shadow $duration $timing-fuction;
+  &:focus,
+  &:hover {
+    box-shadow: $project-shadow;
+  }
+  text-decoration: none;
+}
+.gallery__title {
+  color: $primary-color;
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.gallery__text {
+  color: $primary-color;
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+.card-content {
+  padding: 20px 24px;
+
+  border-right: 1px solid $project-border;
+  border-left: 1px solid $project-border;
+  border-bottom: 1px solid $project-border;
+  box-sizing: border-box;
+}
+
+.project-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery__overlay {
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  color: $primary-white-color;
+  transform: translateY(101%);
+  transition: transform $duration $timing-fuction;
+  background: $project-bcr;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  padding: 63px 24px;
+
+  .gallery__link & :hover,
+  .gallery__link & :focus {
+    opacity: 1;
+  }
+  .link.gallery__link:hover &,
+  .link.gallery__link:focus & {
+    transform: translateY(0%);
+  }
+}

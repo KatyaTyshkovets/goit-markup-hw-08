@@ -1,0 +1,52 @@
+.hero {
+  background-color: $hero-bcr;
+  text-align: center;
+  padding-bottom: 200px;
+  padding-top: 200px;
+  text-transform: uppercase;
+}
+.hero__title {
+  color: $primary-white-color;
+  margin-bottom: 39px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-transform: uppercase;
+}
+
+.button {
+  background-color: $accent-color;
+  color: $primary-white-color;
+  cursor: pointer;
+
+  border: transparent;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  margin-top: 0;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+
+  transition: background-color $duration $timing-fuction;
+  &:hover,
+  &:focus {
+    background-color: $btn-hover;
+  }
+}
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $primary-color;
+  background-image: linear-gradient(to right, $linear-gradient, $linear-gradient),
+    url('../images/hero.jpg');
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}

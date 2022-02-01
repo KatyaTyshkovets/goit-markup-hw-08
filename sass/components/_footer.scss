@@ -1,0 +1,174 @@
+.page-footer {
+  background-color: $bcr-footer;
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.logo-styles {
+  color: $primary-white-color;
+}
+
+.footer-list__item {
+  margin-bottom: 9px;
+}
+.footer-list__item:last-child {
+  margin-bottom: 0;
+}
+.footer {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  margin-top: 20px;
+}
+.footer .link {
+  text-decoration: none;
+}
+.footer .link {
+  color: $color-address;
+
+  transition: color $duration $timing-fuction;
+
+  &:hover,
+  &:focus {
+    color: $primary-white-color;
+  }
+}
+
+.footer-box {
+  margin-left: 70px;
+  margin-right: auto;
+}
+.page-footer > .container {
+  display: flex;
+  align-items: baseline;
+}
+.footer-center {
+  @extend %center-flex;
+  justify-content: left;
+}
+
+.footer-center__link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  @extend %center-flex;
+  justify-content: center;
+
+  transition: backround-color $duration $timing-fuction;
+  &:hover,
+  &:focus {
+    background-color: $btn-hov-foc-color;
+  }
+}
+.footer-box__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $primary-white-color;
+  @extend %center-flex;
+
+  margin-bottom: 20px;
+}
+.footer-center__item + .footer-center__item {
+  margin-left: 10px;
+}
+
+.footer-center__link:hover,
+.footer-center__icon,
+.footer-center__link:focus,
+.footer-center__icon {
+  fill: $primary-white-color;
+}
+.footer-center__item {
+  width: 44px;
+  height: 44px;
+  background: $footer-color-item;
+  border-radius: 50%;
+}
+.send-form {
+  display: block;
+  width: 200px;
+  height: 50px;
+  background-color: $btn-hov-foc-color;
+  box-shadow: 0px 4px 4px $shadow-foot;
+  border-radius: 4px;
+  border: transparent;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: $primary-white-color;
+
+  padding: 10px 55px;
+  margin-right: auto;
+  margin-left: auto;
+
+  cursor: pointer;
+
+  transition: background-color $duration $timing-fuction;
+
+  &:focus,
+  &:hover {
+    background-color: $btn-hover;
+  }
+}
+
+.footer-form label {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $primary-white-color;
+}
+.spam-form input {
+  padding: 0;
+  width: 358px;
+  height: 50px;
+  background: $bcr-footer;
+  color: $primary-white-color;
+  border: 1px solid $footer-border;
+  border-radius: 4px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  padding: 16px;
+}
+.spam-form {
+  @extend %center-flex;
+  justify-content: space-between;
+
+  margin-top: 20px;
+}
+
+.spam-form::placeholder {
+  color: $color-address;
+  font-size: 16px;
+  line-height: 1.25;
+  align-items: center;
+}
+.footer-btn {
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  @extend %center-flex;
+  justify-content: center;
+  text-align: center;
+  background: $btn-hov-foc-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: transparent;
+  color: $primary-white-color;
+  margin-left: 12px;
+  padding: 10px;
+  cursor: pointer;
+}
+.spam-form .footer-btn__icon {
+  margin-left: 10px;
+}

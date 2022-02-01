@@ -1,0 +1,81 @@
+.card-item {
+  background-color: $primary-white-color;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: $team-shadow;
+  padding: 30px 0px 30px 0px;
+}
+.team {
+  padding-top: 29.87px;
+  padding-bottom: 43.87px;
+}
+.team__text {
+  margin-bottom: 16px;
+  text-align: center;
+}
+.section-team {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+
+.comand-list__team-link {
+  width: 44px;
+  height: 44px;
+  @extend %center-flex;
+  justify-content: center;
+  background: $primary-white-color;
+  border-radius: 50%;
+  color: $team-color;
+  margin-right: 10px;
+
+  transition: color $duration $timing-fuction;
+  transition: background-color $duration $timing-fuction;
+
+  &:focus,
+  &:hover {
+    background-color: $btn-hov-foc-color;
+    color: $primary-white-color;
+  }
+}
+.comand-list__icon {
+  fill: currentColor;
+}
+
+.comand-list {
+  display: flex;
+  justify-content: center;
+}
+
+.team__name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.section-team {
+  background-color: $bcg-team;
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+}
+.comand-list__team-item {
+  width: calc(100% / 4 - 30px);
+  margin-left: 30px;
+  box-shadow: $team-shadow;
+}
+.section-team__title {
+  color: var(--primary-text-color);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+
+  margin-top: 0;
+  margin-bottom: 50px;
+}

@@ -1,0 +1,45 @@
+.client-list {
+  @extend %center-flex;
+  justify-content: center;
+}
+.client-list__link {
+  width: 170px;
+  height: 92px;
+  @extend %center-flex;
+  justify-content: center;
+  border: 1px solid $team-color;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-right: 30px;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    border: 1px solid $btn-hov-foc-color;
+  }
+
+  align-items: center;
+
+  color: $team-color;
+
+  transition: color $duration $timing-fuction;
+}
+.client-list__icon {
+  fill: currentColor;
+}
+.client {
+  margin-bottom: 50px;
+}
+.section-client {
+  padding-top: 94px;
+}
+.section-client__title {
+  color: $primary-color;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+
+  margin-top: 0;
+  margin-bottom: 50px;
+}

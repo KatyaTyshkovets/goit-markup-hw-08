@@ -1,0 +1,66 @@
+.contact {
+  margin-left: auto;
+}
+.auth-nav {
+  margin-left: auto;
+  &.link:focus,
+  &.link:hover {
+    color: $accent-color;
+  }
+}
+.auth-nav .link {
+  text-decoration: none;
+
+  transition: color $duration $timing-fuction;
+
+  color: $title-text;
+  margin-right: 30px;
+}
+
+.auth-nav,
+.site-nav {
+  font-weight: 500;
+  line-height: 1.14;
+  @extend %center-flex;
+}
+.auth-nav__mail-icon {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+.auth-nav__contact-icon {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+.auth-nav__link {
+  color: $title-text;
+
+  transition: color $duration $timing-fuction;
+  &:hover,
+  &:focus {
+    color: $btn-hov-foc-color;
+  }
+}
+
+.link.curent {
+  position: relative;
+  &:hover::after,
+  &:focus::after {
+    opacity: 1;
+  }
+  &::after {
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: $btn-hov-foc-color;
+    content: '';
+    border-radius: 2px;
+    bottom: -32px;
+    left: 0;
+    opacity: 0;
+    transition: opacity $duration $timing-fuction;
+  }
+}
