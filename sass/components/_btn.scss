@@ -1,6 +1,10 @@
 .project {
-  margin-bottom: 50px;
-  padding-top: 94px;
+  padding-top: 60px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    padding-top: 94px;
+  }
 }
 .item__button {
   color: $primary-color;
@@ -15,8 +19,8 @@
   border-radius: 4px;
   border: none transparent;
 
-  transition: box-shadow $duration $timing-fuction, background-color $duration $timing-fuction,
-    color$duration $timing-fuction;
+  transition: box-shadow $duration $timing-fuction,
+    background-color $duration $timing-fuction, color$duration $timing-fuction;
 
   &:hover,
   &:focus {
@@ -24,16 +28,30 @@
     background-color: $accent-bcr;
     color: $primary-white-color;
     cursor: pointer;
+    @media screen and(min_width:480px) {
+      margin-bottom: 40px;
+    }
+    @media screen and (min-width: 768px) {
+    }
   }
 }
 .item {
-  margin-bottom: 50px;
-}
-
-.item {
+  margin-bottom: 40px;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  @media screen and(min-width:1200px) {
+    margin-bottom: 50px;
+  }
 }
 .buttons:not(:last-child) {
   margin-right: 8px;
+}
+.buttons {
+  margin-bottom: 15px;
 }
