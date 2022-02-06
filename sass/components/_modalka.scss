@@ -6,21 +6,37 @@
   height: 100vh;
   background-color: $bcr-modal;
   opacity: 1;
-  transition: opacity $duration $timing-fuction, visibility $duration $timing-fuction;
+  transition: opacity $duration $timing-fuction,
+    visibility $duration $timing-fuction;
 }
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  padding: 40px;
-  transform: translate(-50%, -50%) scale(1);
-  transition: transform $duration $timing-fuction;
-
-  min-width: 528px;
-  min-height: 581px;
   background: $primary-white-color;
   border-radius: 4px;
   box-shadow: $team-shadow;
+  padding: 20px;
+
+  @media screen and (min-width: 480px) {
+    position: absolute;
+    width: 450px;
+    height: 609px;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform $duration $timing-fuction;
+
+    padding: 40px;
+  }
+  @media screen and (min-width: 1200px) {
+    min-width: 528px;
+    min-height: 581px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 40px;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform $duration $timing-fuction;
+  }
 }
 .backdrop.is-hidden {
   opacity: 0;

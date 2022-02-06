@@ -16,7 +16,6 @@ ul {
 
 img {
   display: block;
-  width: 100%;
   max-width: 100%;
   height: auto;
 }
@@ -34,7 +33,7 @@ body {
 }
 
 .header__container, .site-list, .site-nav__item > .auth-nav__link, .site-nav__item .link, .site-nav .link, .auth-nav,
-.site-nav, .footer-btn {
+.site-nav {
   display: flex;
   align-items: center;
 }
@@ -149,15 +148,11 @@ body {
 }
 
 .auth-nav__mail-icon {
-  width: 16px;
-  height: 12px;
   margin-right: 10px;
   fill: currentColor;
 }
 
 .auth-nav__contact-icon {
-  width: 10px;
-  height: 16px;
   margin-right: 10px;
   fill: currentColor;
 }
@@ -384,6 +379,12 @@ body {
   margin-top: 60px;
 }
 
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .page-footer {
+    text-align: center;
+  }
+}
+
 .logo-styles {
   color: #ffffff;
 }
@@ -401,6 +402,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
   margin-top: 20px;
+  align-items: center;
 }
 
 @media screen and (min-width: 480px) {
@@ -433,6 +435,21 @@ body {
   }
 }
 
+@media screen and (min-width: 480px) {
+  .page-footer > .container {
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page-footer > .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-around;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .page-footer > .container {
     display: flex;
@@ -444,6 +461,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: left;
+}
+
+@media screen and (min-width: 480px) {
+  .footer-center {
+    justify-content: center;
+  }
 }
 
 .footer-center__link {
@@ -493,32 +516,7 @@ body {
   height: 44px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-}
-
-.send-form {
-  display: block;
-  width: 200px;
-  height: 50px;
-  background-color: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: transparent;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
   align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: #ffffff;
-  padding: 10px 55px;
-  margin-right: auto;
-  margin-left: auto;
-  cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.send-form:focus, .send-form:hover {
-  background-color: #188ce8;
 }
 
 .footer-form label {
@@ -541,7 +539,7 @@ body {
   padding: 16px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1199px) {
   .spam-form input {
     margin-bottom: 20px;
   }
@@ -554,7 +552,6 @@ body {
 @media screen and (min-width: 1200px) {
   .spam-form {
     display: flex;
-    align-items: center;
     justify-content: space-between;
   }
 }
@@ -573,7 +570,6 @@ body {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  justify-content: center;
   text-align: center;
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -583,6 +579,20 @@ body {
   margin-left: 12px;
   padding: 10px;
   cursor: pointer;
+}
+
+@media screen and (min-width: 480px) {
+  .footer-btn {
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .spam-form .footer-btn__icon {

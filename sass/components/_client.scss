@@ -1,36 +1,46 @@
 .client-list {
-  @extend %center-flex;
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -30px;
-    margin-bottom: -30px;
+    margin: -15px;
   }
-  @media screen and (min-width: 768px) {
+
+  @media screen and (min-width: 1200px) {
     display: flex;
-    flex-wrap: wrap;
-    margin-left: -30px;
+    align-items: center;
+    justify-content: center;
   }
-  justify-content: center;
 }
 .client-list__item {
-  @media screen and (min-width: 480px) {
-    width: calc(100% / 2 - 30px);
-    margin-left: 30px;
-    margin-bottom: 30px;
+  width: calc((100% - 15px * 4) / 2);
+  margin: 15px;
+
+  @media screen and(min-width:768px) {
+    width: calc((100% - 15px * 6) / 3);
   }
-  @media screen and (min-width: 768px) {
-    width: calc(100% / 3 - 30px);
-    margin-left: 30px;
-  }
+}
+.client {
+  margin-bottom: 30px;
 }
 .client-list__link {
   height: 92px;
+  @extend %center-flex;
+  justify-content: center;
   border: 1px solid $team-color;
   border-radius: 4px;
   box-sizing: border-box;
   margin-right: 30px;
-  @extend %center-flex;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    border: 1px solid $btn-hov-foc-color;
+  }
+
+  align-items: center;
+
+  color: $team-color;
+
+  transition: color $duration $timing-fuction;
   @media screen and (min-width: 480px) {
     width: 210px;
   }
@@ -39,25 +49,12 @@
   }
   @media screen and (min-width: 1200px) {
     width: 170px;
-    justify-content: center;
   }
-
-  &:hover,
-  &:focus {
-    color: $accent-color;
-    border: 1px solid $btn-hov-foc-color;
-  }
-
-  color: $team-color;
-
-  transition: color $duration $timing-fuction;
 }
 .client-list__icon {
   fill: currentColor;
 }
-.client {
-  margin-bottom: 50px;
-}
+
 .section-client {
   padding-top: 60px;
   @media screen and (min-width: 1200px) {
@@ -66,15 +63,20 @@
 }
 .section-client__title {
   color: $primary-color;
-  margin-bottom: 30px;
-  margin-top: 0;
-  text-align: center;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 1.17;
 
+  font-weight: 700;
+
+  text-align: center;
+
+  margin-top: 0;
+  @media screen and (min-width: 480px) {
+    font-size: 28px;
+    line-height: 1.17;
+    margin-bottom: 30px;
+  }
   @media screen and (min-width: 1200px) {
     font-size: 36px;
+    line-height: 1.17;
     margin-bottom: 50px;
   }
 }

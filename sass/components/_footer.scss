@@ -3,11 +3,11 @@
   padding-top: 60px;
   padding-bottom: 60px;
   margin-top: 60px;
-}
-.footer-wrap {
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    text-align: center;
   }
 }
+
 .logo-styles {
   color: $primary-white-color;
 }
@@ -23,6 +23,7 @@
   font-size: 14px;
   line-height: 1.71;
   margin-top: 20px;
+  align-items: center;
   @media screen and (min-width: 480px) {
     margin-bottom: 60px;
   }
@@ -43,12 +44,23 @@
 
 .footer-box {
   margin-bottom: 60px;
+
   @media screen and (min-width: 1200px) {
     margin-left: 70px;
     margin-right: auto;
   }
 }
 .page-footer > .container {
+  @media screen and (min-width: 480px) {
+    align-items: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-around;
+  }
   @media screen and (min-width: 1200px) {
     display: flex;
     align-items: baseline;
@@ -58,16 +70,20 @@
   display: flex;
   align-items: center;
   justify-content: left;
+
+  @media screen and (min-width: 480px) {
+    justify-content: center;
+  }
 }
 
 .footer-center__link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-
   display: flex;
   align-items: center;
   justify-content: center;
+
   transition: backround-color $duration $timing-fuction;
   &:hover,
   &:focus {
@@ -81,6 +97,7 @@
   text-transform: uppercase;
   color: $primary-white-color;
   margin-bottom: 20px;
+
   @media screen and (min-width: 1200px) {
     display: flex;
     align-items: center;
@@ -102,36 +119,7 @@
   height: 44px;
   background: $footer-color-item;
   border-radius: 50%;
-}
-.send-form {
-  display: block;
-  width: 200px;
-  height: 50px;
-  background-color: $btn-hov-foc-color;
-  box-shadow: 0px 4px 4px $shadow-foot;
-  border-radius: 4px;
-  border: transparent;
-
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
   align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: $primary-white-color;
-
-  padding: 10px 55px;
-  margin-right: auto;
-  margin-left: auto;
-
-  cursor: pointer;
-
-  transition: background-color $duration $timing-fuction;
-
-  &:focus,
-  &:hover {
-    background-color: $btn-hover;
-  }
 }
 
 .footer-form label {
@@ -144,10 +132,6 @@
   color: $primary-white-color;
 }
 .spam-form input {
-  @media screen and (min-width: 480px) {
-    margin-bottom: 20px;
-  }
-
   width: 358px;
   height: 50px;
   background: $bcr-footer;
@@ -156,12 +140,16 @@
   border-radius: 4px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   padding: 16px;
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 20px;
+  }
 }
 .spam-form {
   margin-top: 20px;
+
   @media screen and (min-width: 1200px) {
     display: flex;
-    align-items: center;
     justify-content: space-between;
   }
 }
@@ -179,8 +167,6 @@
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  @extend %center-flex;
-  justify-content: center;
   text-align: center;
   background: $btn-hov-foc-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -190,6 +176,16 @@
   margin-left: 12px;
   padding: 10px;
   cursor: pointer;
+
+  @media screen and (min-width: 480px) {
+    align-items: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .spam-form .footer-btn__icon {
   margin-left: 10px;
