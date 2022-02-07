@@ -5,6 +5,10 @@
 }
 
 .header__container {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    justify-content: space-between;
+  }
   @extend %center-flex;
   justify-content: center;
 }

@@ -1,11 +1,27 @@
 .contact {
-  margin-left: auto;
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
+}
+.auth-nav__item {
+  @media screen and(min-width:768px) and (max-width: 1199px) {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
 }
 .auth-nav {
-  margin-left: auto;
   &.link:focus,
   &.link:hover {
     color: $accent-color;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: block;
+    margin-left: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
   }
 }
 .auth-nav .link {
@@ -14,7 +30,10 @@
   transition: color $duration $timing-fuction;
 
   color: $title-text;
-  margin-right: 30px;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 30px;
+  }
 }
 
 .auth-nav,
