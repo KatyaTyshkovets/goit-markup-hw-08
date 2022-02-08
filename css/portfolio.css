@@ -128,6 +128,7 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .mob-menu.is-hidden {
@@ -137,14 +138,14 @@ body {
   visibility: hidden;
 }
 
-.mob-menu-bottom {
-  margin-top: auto;
-}
-
 .menu-close-btn {
   margin-left: auto;
   display: block;
   margin-bottom: 13px;
+}
+
+.menu-close-btn:hover, .menu-close-btn:focus {
+  color: #2196f3;
 }
 
 .mob-nav {
@@ -152,8 +153,15 @@ body {
   font-size: 40px;
   line-height: 1.17;
   letter-spacing: 0.02em;
-  text-align: center;
   color: #212121;
+}
+
+.mob-nav__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mob-auth__item:not(:last-child) {
+  margin-bottom: 32px;
 }
 
 .mob-nav .link {
@@ -170,17 +178,15 @@ body {
   color: #2196f3;
 }
 
-.mob-nav__item:not(:last-child) {
-  margin-bottom: 32px;
-}
-
-.mob-auth {
+.mob-nav__item .mob-auth {
   font-weight: 500;
   font-size: 34px;
   line-height: 1.17;
   letter-spacing: 0.02em;
-  text-align: center;
   color: #212121;
+}
+
+.mob-auth {
   display: flex;
   flex-direction: column-reverse;
 }
@@ -199,7 +205,6 @@ body {
   font-size: 34px;
   line-height: 1.17;
   letter-spacing: 0.02em;
-  text-align: center;
   color: #2196f3;
   margin-bottom: 32px;
 }
@@ -209,20 +214,24 @@ body {
   font-size: 24px;
   line-height: 1.16;
   letter-spacing: 0.02em;
-  text-align: center;
   color: #757575;
-  margin-bottom: 50px;
+}
+
+.mob-contact {
+  margin-bottom: 64px;
 }
 
 .social {
+  display: flex;
+}
+
+.social__link {
+  color: #2196f3;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
-  justify-content: center;
-  color: #2196f3;
-  display: flex;
-  justify-content: center;
+  border-left: 1px solid #000;
 }
 
 .social__item:not(:last-child) {

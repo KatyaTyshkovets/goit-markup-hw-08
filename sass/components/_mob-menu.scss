@@ -13,6 +13,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
   }
   opacity: 1;
   transition: left $duration $timing-fuction, opacity $duration $timing-fuction,
@@ -24,21 +25,28 @@
   pointer-events: none;
   visibility: hidden;
 }
-.mob-menu-bottom {
-  margin-top: auto;
-}
+
 .menu-close-btn {
   margin-left: auto;
   display: block;
   margin-bottom: 13px;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 .mob-nav {
   font-weight: 500;
   font-size: 40px;
   line-height: 1.17;
   letter-spacing: 0.02em;
-  text-align: center;
   color: $primary-color;
+}
+.mob-nav__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+.mob-auth__item:not(:last-child) {
+  margin-bottom: 32px;
 }
 .mob-nav .link {
   color: $primary-color;
@@ -52,18 +60,14 @@
 .mob-nav .link.curent {
   color: $accent-color;
 }
-.mob-nav__item {
-  &:not(:last-child) {
-    margin-bottom: 32px;
-  }
-}
-.mob-auth {
+.mob-nav__item .mob-auth {
   font-weight: 500;
   font-size: 34px;
   line-height: 1.17;
   letter-spacing: 0.02em;
-  text-align: center;
   color: $primary-color;
+}
+.mob-auth {
   display: flex;
   flex-direction: column-reverse;
 }
@@ -83,7 +87,7 @@
   font-size: 34px;
   line-height: 1.17;
   letter-spacing: 0.02em;
-  text-align: center;
+
   color: $accent-color;
   margin-bottom: 32px;
 }
@@ -92,20 +96,23 @@
   font-size: 24px;
   line-height: 1.16;
   letter-spacing: 0.02em;
-  text-align: center;
   color: $title-text;
-  margin-bottom: 50px;
+}
+.mob-contact {
+  margin-bottom: 64px;
 }
 
 .social {
+  display: flex;
+}
+.social__link {
+  color: $accent-color;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
-  justify-content: center;
-  color: $accent-color;
-  display: flex;
-  justify-content: center;
+
+  border-left: 1px solid #000;
 }
 .social__item:not(:last-child) {
   margin-right: 20px;
