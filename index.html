@@ -186,19 +186,22 @@
                 <ul class="list work-list">
                     <li class="work-list__item">
                         <div class="work-container">
-                            <img src="./images/code.jpg" alt="набір коду" width="370">
+                            <img srcset="./images/code-desk-1x.jpg  1x, ./images/code-desk-2x.jpg  2x"
+                                src="./images/code-desk-1x.jpg" alt="набір коду" width="370">
                             <p class="work-list__text-work">Десктопные приложения</p>
                         </div>
                     </li>
                     <li class="work-list__item">
                         <div class="work-container">
-                            <img src="./images/box.jpg" alt="екран монітора" width="370">
+                            <img srcset="./images/box-desk-1x.jpg  1x, ./images/box-desk-2x.jpg  2x"
+                                src="./images/box-desk-1x.jpg" alt="екран монітора" width="370">
                             <p class="work-list__text-work">Мобильные приложения</p>
                         </div>
                     </li>
                     <li class="work-list__item">
                         <div class="work-container">
-                            <img src="./images/box2.jpg" alt="планшет" width="370">
+                            <img srcset="./images/box2-desk-1x.jpg  1x, ./images/box2-desk-2x.jpg  2x"
+                                src="./images/box2-desk-1x.jpg" alt="планшет" width="370">
                             <p class="work-list__text-work">Дизайнерские решения</p>
                         </div>
                     </li>
@@ -212,7 +215,16 @@
                 <h2 class="section-team__title">Наша команда</h2>
                 <ul class="list card-list">
                     <li class="comand-list__team-item">
-                        <img src="./images/teamcard1.jpg" alt=" виробничий дизайнер" width="270">
+                        <picture>
+                            <source srcset="./images/teamcard1-desk-1x.jpg 1x, ./images/teamcard1-desk-1x.jpg 2x"
+                                media="(min-width: 1200px">
+                            <source srcset="./images/teamcard1-tab-1x.jpg 1x, ./images/teamcard1-tab-2x.jpg   2x"
+                                media="(min-width: 768px">
+                            <source srcset="./images/teamcard1-mob-1x.jpg 1x, ./images/teamcard1-mob-2x.jpg   2x"
+                                media="(min-width: 320px">
+                            <img src="./images/teamcard1-desk-1x.jpg" alt=" виробничий дизайнер">
+                        </picture>
+
                         <div class="card-item team">
                             <h3 class="team__name">Игорь Демьяненко</h3>
                             <p class="team__text">Product Designer</p>
@@ -249,7 +261,16 @@
                         </div>
                     </li>
                     <li class="comand-list__team-item">
-                        <img src="./images/teamcard2.jpg" alt="фронтальний розробник" width="270">
+                        <picture>
+                            <source srcset="./images/teamcard2-desk-1x.jpg 1x, ./images/teamcard2-desk-2x.jpg 2x"
+                                media="(min-width: 1200px">
+                            <source srcset="./images/teamcard2-tab-1x.jpg 1x, ./images/teamcard2-tab-2x.jpg   2x"
+                                media="(min-width: 768px">
+                            <source srcset="./images/teamcard2-mob-1x.jpg 1x, ./images/teamcard2-mob-2x.jpg   2x"
+                                media="(min-width: 320px">
+                            <img src="./images/teamcard2-desk-1x.jpg" alt="фронтальний розробник">
+                        </picture>
+
                         <div class="card-item team">
                             <h3 class="team__name">Ольга Репина</h3>
                             <p class="team__text">Frontend Developer</p>
@@ -287,7 +308,15 @@
 
                     </li>
                     <li class="comand-list__team-item">
-                        <img src="./images/teamcard3.jpg" alt="маркетолог" width="270">
+                        <picture>
+                            <source srcset="./images/teamcard3-desk-1x.jpg 1x, ./images/teamcard3-desk-2x.jpg 2x"
+                                media="(min-width: 1200px">
+                            <source srcset="./images/teamcard3-tab-1x.jpg 1x, ./images/teamcard3-tab-2x.jpg   2x"
+                                media="(min-width: 768px">
+                            <source srcset="./images/teamcard3-mob-1x.jpg 1x, ./images/teamcard3-mob-2x.jpg   2x"
+                                media="(min-width: 320px">
+                            <img src="./images/teamcard3-desk-1x.jpg" alt="маркетолог">
+                        </picture>
                         <div class="card-item team">
                             <h3 class="team__name">Николай Тарасов</h3>
                             <p class="team__text">Marketing</p>
@@ -325,7 +354,15 @@
 
                     </li>
                     <li class="comand-list__team-item">
-                        <img src="./images/teamcard4.jpg" alt="дизайнер інтерфейсу користувача" width="270">
+                        <picture>
+                            <source srcset="./images/teamcard4-desk-1x.jpg 1x, ./images/teamcard4-desk-2x.jpg 2x"
+                                media="(min-width: 1200px">
+                            <source srcset="./images/teamcard4-tab-1x.jpg 1x, ./images/teamcard4-tab-2x.jpg   2x"
+                                media="(min-width: 768px">
+                            <source srcset="./images/teamcard4-mob-1x.jpg 1x, ./images/teamcard4-mob-2x.jpg   2x"
+                                media="(min-width: 320px">
+                            <img src="./images/teamcard4-desk-1x.jpg" alt="дизайнер інтерфейсу користувача">
+                        </picture>
                         <div class="card-item team">
                             <h3 class="team__name">Михаил Ермаков</h3>
                             <p class="team__text">UI Designer</p>
