@@ -118,7 +118,18 @@
   border-right: 1px solid rgba(33, 33, 33, 0.2);
   padding-right: 10px;
 }
+.menu-close-btn {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
 .menu-open-btn {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+
   &:hover,
   &:focus {
     color: $accent-color;
