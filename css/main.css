@@ -284,10 +284,8 @@ body {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .contact {
-    margin-left: auto;
-  }
+.auth-nav {
+  margin-left: auto;
 }
 
 .auth-nav.link:focus, .auth-nav.link:hover {
@@ -298,7 +296,7 @@ body {
   .auth-nav {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
   }
 }
 

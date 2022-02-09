@@ -1,30 +1,26 @@
 .gallery {
-  margin-bottom: -30px;
   padding-top: 0;
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -30px;
-  }
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -30px;
+    margin: -15px;
   }
 }
 .gallery__item {
-  margin-bottom: 30px;
   @media screen and (min-width: 768px) {
-    width: calc(100% / 2 - 30px);
-    margin-left: 30px;
+    margin: 15px;
+    flex-basis: calc((100% - 15px * 4) / 2);
   }
+
   @media screen and(min-width:1200px) {
-    width: calc(100% / 3 - 30px);
-    margin-left: 30px;
+    flex-basis: calc((100% - 15px * 6) / 3);
+    margin: 15px;
   }
 }
 .gallery__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition: box-shadow $duration $timing-fuction;
   &:focus,
   &:hover {
@@ -39,9 +35,6 @@
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  @media screen and (min-width: 768px) {
-    font-size: 17px;
-  }
 }
 
 .gallery__text {
@@ -51,6 +44,7 @@
 }
 
 .card-content {
+  flex-grow: 1;
   padding: 20px 24px;
 
   border-right: 1px solid $project-border;

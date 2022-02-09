@@ -10,12 +10,9 @@
     }
   }
 }
-.contact {
-  @media screen and (min-width: 1200px) {
-    margin-left: auto;
-  }
-}
+
 .auth-nav {
+  margin-left: auto;
   &.link:focus,
   &.link:hover {
     color: $accent-color;
@@ -23,7 +20,7 @@
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
   }
 }
 
