@@ -33,7 +33,7 @@ body {
 }
 
 .header__container, .site-list, .site-nav__item > .auth-nav__link, .site-nav__item .link, .site-nav .link, .auth-nav,
-.site-nav {
+.site-nav, .footer-center__link, .footer-box__title {
   display: flex;
   align-items: center;
 }
@@ -280,7 +280,7 @@ body {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .auth-nav {
     display: block;
-    margin-left: 30px;
+    margin-right: 84px;
   }
 }
 
@@ -544,10 +544,9 @@ body {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
-  margin-top: 60px;
 }
 
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .page-footer {
     text-align: center;
   }
@@ -573,7 +572,7 @@ body {
   align-items: center;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .footer {
     margin-bottom: 60px;
   }
@@ -581,9 +580,6 @@ body {
 
 .footer .link {
   text-decoration: none;
-}
-
-.footer .link {
   color: rgba(255, 255, 255, 0.6);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -592,8 +588,10 @@ body {
   color: #ffffff;
 }
 
-.footer-box {
-  margin-bottom: 60px;
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  .footer-box {
+    margin-bottom: 60px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -603,7 +601,7 @@ body {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .page-footer > .container {
     align-items: center;
   }
@@ -613,7 +611,7 @@ body {
   .page-footer > .container {
     display: flex;
     flex-wrap: wrap;
-    align-items: stretch;
+    align-items: baseline;
     justify-content: space-around;
   }
 }
@@ -631,7 +629,7 @@ body {
   justify-content: left;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .footer-center {
     justify-content: center;
   }
@@ -641,8 +639,6 @@ body {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
   justify-content: center;
   transition: backround-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -660,7 +656,7 @@ body {
   margin-bottom: 20px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .footer-box__title {
     display: flex;
     align-items: center;
@@ -684,7 +680,32 @@ body {
   height: 44px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+}
+
+.send-form {
+  display: block;
+  width: 200px;
+  height: 50px;
+  background-color: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: transparent;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
   align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  padding: 10px 55px;
+  margin-right: auto;
+  margin-left: auto;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.send-form:focus, .send-form:hover {
+  background-color: #188ce8;
 }
 
 .footer-form label {
@@ -697,19 +718,26 @@ body {
 }
 
 .spam-form input {
-  width: 358px;
+  width: 100%;
   height: 50px;
   background: #2f303a;
   color: #ffffff;
-  border: 1px solid rgba(160, 60, 60, 0.3);
-  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
   padding: 16px;
 }
 
 @media screen and (max-width: 1199px) {
   .spam-form input {
     margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .spam-form input {
+    width: 358px;
   }
 }
 
@@ -738,6 +766,8 @@ body {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -746,21 +776,6 @@ body {
   color: #ffffff;
   margin-left: 12px;
   padding: 10px;
-  cursor: pointer;
-}
-
-@media screen and (min-width: 480px) {
-  .footer-btn {
-    align-items: center;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .footer-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
 }
 
 .spam-form .footer-btn__icon {
