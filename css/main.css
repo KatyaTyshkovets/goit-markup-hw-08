@@ -716,10 +716,10 @@ body {
   letter-spacing: 0.03em;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .form-label.agreement {
-    font-size: 12px;
-    line-height: 1.16;
+    font-size: 11px;
+    line-height: 1.17;
   }
 }
 

@@ -96,9 +96,9 @@
 .form-label.agreement {
   letter-spacing: 0.03em;
 
-  @media screen and (min-width: 480px) {
-    font-size: 12px;
-    line-height: 1.16;
+  @media screen and (min-width: 320px) {
+    font-size: 11px;
+    line-height: 1.17;
   }
   @media screen and (min-width: 1200px) {
     font-size: 14px;
