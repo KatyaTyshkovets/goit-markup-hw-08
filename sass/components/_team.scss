@@ -99,4 +99,9 @@
 
   margin-top: 0;
   margin-bottom: 50px;
+  @media screen and (min-width: 320px) {
+    font-size: 28px;
+    line-height: 1.17;
+    margin-bottom: 30px;
+  }
 }

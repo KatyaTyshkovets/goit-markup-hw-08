@@ -65,15 +65,14 @@
 }
 .section-client__title {
   color: $primary-color;
-
   font-weight: 700;
-
   text-align: center;
-
   margin-top: 0;
+
   @media screen and (min-width: 320px) {
     font-size: 28px;
     line-height: 1.17;
+
     margin-bottom: 30px;
   }
   @media screen and (min-width: 1200px) {
