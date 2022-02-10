@@ -56,7 +56,7 @@
       $linear-gradient,
       $linear-gradient
     ),
-    url("..//images/hero-mob-1x.jpg");
+    url("../images/hero-mob-1x.jpg");
 
   background-repeat: no-repeat;
   background-position: center;
@@ -70,7 +70,7 @@
         $linear-gradient,
         $linear-gradient
       ),
-      url("..//images/hero-mob-2x.jpg");
+      url("../images/hero-mob-2x.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -88,7 +88,7 @@
         $linear-gradient,
         $linear-gradient
       ),
-      url("..//images/hero-tab-1x.jpg");
+      url("../images/hero-tab-1x.jpg");
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -97,7 +97,7 @@
           $linear-gradient,
           $linear-gradient
         ),
-        url("..//images/hero-tab-2x.jpg");
+        url("../images/hero-tab-2x.jpg");
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;

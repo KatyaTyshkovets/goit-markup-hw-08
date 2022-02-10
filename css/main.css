@@ -338,25 +338,26 @@ body {
   color: #2196f3;
 }
 
-.link.curent::after {
-  position: absolute;
-  width: 100%;
-  height: 4px;
-  background: #2196f3;
-  content: "";
-  border-radius: 2px;
-  bottom: -32px;
-  left: 0;
-  opacity: 0;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.link.curent {
+  position: relative;
+}
+
+.link.curent:hover::after, .link.curent:focus::after {
+  opacity: 1;
 }
 
 @media screen and (min-width: 768px) {
-  .link.curent {
-    position: relative;
-  }
-  .link.curent:hover::after, .link.curent:focus::after {
-    opacity: 1;
+  .link.curent::after {
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: #2196f3;
+    content: "";
+    border-radius: 2px;
+    bottom: -32px;
+    left: 0;
+    opacity: 0;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
@@ -427,7 +428,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   background-color: #212121;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("..//images/hero-mob-1x.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-mob-1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -435,7 +436,7 @@ body {
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .overlay {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("..//images/hero-mob-2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-mob-2x.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -453,13 +454,13 @@ body {
   .overlay {
     min-width: 768px;
     height: 400px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("..//images/hero-tab-1x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-tab-1x.jpg");
   }
 }
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .overlay {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("..//images/hero-tab-2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-tab-2x.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
