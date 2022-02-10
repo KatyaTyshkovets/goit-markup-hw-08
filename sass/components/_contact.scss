@@ -60,11 +60,6 @@
 }
 
 .link.curent {
-  position: relative;
-  &:hover::after,
-  &:focus::after {
-    opacity: 1;
-  }
   &::after {
     position: absolute;
     width: 100%;
@@ -76,5 +71,12 @@
     left: 0;
     opacity: 0;
     transition: opacity $duration $timing-fuction;
+  }
+  @media screen and (min-width: 768px) {
+    position: relative;
+    &:hover::after,
+    &:focus::after {
+      opacity: 1;
+    }
   }
 }

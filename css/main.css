@@ -338,14 +338,6 @@ body {
   color: #2196f3;
 }
 
-.link.curent {
-  position: relative;
-}
-
-.link.curent:hover::after, .link.curent:focus::after {
-  opacity: 1;
-}
-
 .link.curent::after {
   position: absolute;
   width: 100%;
@@ -357,6 +349,15 @@ body {
   left: 0;
   opacity: 0;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .link.curent {
+    position: relative;
+  }
+  .link.curent:hover::after, .link.curent:focus::after {
+    opacity: 1;
+  }
 }
 
 .visually-hidden {
