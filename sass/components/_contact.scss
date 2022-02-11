@@ -73,10 +73,15 @@
       background: $btn-hov-foc-color;
       content: "";
       border-radius: 2px;
-      bottom: -34px;
+      bottom: -40px;
       left: 0;
       opacity: 1;
       transition: opacity $duration $timing-fuction;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    &::after {
+      bottom: -34px;
     }
   }
 }
