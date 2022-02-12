@@ -16,6 +16,9 @@
   opacity: 1;
   transition: left $duration $timing-fuction, opacity $duration $timing-fuction,
     visibility $duration $timing-fuction;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 .mob-menu.is-hidden {
   left: 100%;

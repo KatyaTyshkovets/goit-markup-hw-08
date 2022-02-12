@@ -135,6 +135,12 @@ body {
   justify-content: space-between;
 }
 
+@media screen and (min-width: 768px) {
+  .mob-menu {
+    display: none;
+  }
+}
+
 .mob-menu.is-hidden {
   left: 100%;
   opacity: 0;
